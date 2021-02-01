@@ -4,13 +4,36 @@ import matplotlib.pyplot as plt
 
 box = "TS1_5"
 
+if box is 'TS2_14':
+    boundry_pairs_1 = np.array([[243, 14,195 , 14],[198 , 72,199 , 115], [233 , 64,234 , 105]])
+    boundry_pairs_2 = np.array([[134 , 62,171 , 55], [197 , 73,235 , 66],[199 , 117,233 , 107]])
+    boundry_pairs_3 = np.array([[170 , 54,234 , 63], [134 , 62,197 , 73],[134 , 106,197 , 116]])
+    opposite_point_1 = np.array([171 , 55])
+    opposite_point_2 = np.array([135 , 104])
+    opposite_point_3 = np.array([233 , 106])
+
+if box is 'TS2_14':
+    boundry_pairs_1 = np.array([[133 , 63,135 , 104],[198 , 72,199 , 115], [233 , 64,234 , 105]])
+    boundry_pairs_2 = np.array([[134 , 62,171 , 55], [197 , 73,235 , 66],[199 , 117,233 , 107]])
+    boundry_pairs_3 = np.array([[170 , 54,234 , 63], [134 , 62,197 , 73],[134 , 106,197 , 116]])
+    opposite_point_1 = np.array([171 , 55])
+    opposite_point_2 = np.array([135 , 104])
+    opposite_point_3 = np.array([233 , 106])
+
+if box is 'TS1_6':
+    boundry_pairs_1 = np.array([[313 , 104,483 , 123],[254 , 261,447 , 282], [261 , 370,444 , 393]])
+    boundry_pairs_2 = np.array([[314 , 103,255 , 260], [484 , 121,449 , 283],[479 , 226,445 , 390]])
+    boundry_pairs_3 = np.array([[254 , 262,261 , 368], [448 , 284,445 , 392],[484 , 122,479 , 225]])
+    opposite_point_1 = np.array([479 , 226])
+    opposite_point_2 = np.array([261 , 370])
+    opposite_point_3 = np.array([313 , 104])
 if box is 'TS1_5':
-    boundry_pairs_1 = np.array([[231 , 149,489 , 121],[250 , 259,530 , 229], [258 , 368,522 , 335]])
-    boundry_pairs_2 = np.array([[230 , 149,238 , 253], [251 , 259,258 , 366],[489 , 122,530 , 227]])
-    boundry_pairs_3 = np.array([[238 , 255,231 , 149], [258 , 367,251 , 258],[521 , 335,530 , 228]])
-    opposite_point_1 = np.array([237 , 254])
-    opposite_point_2 = np.array([521 , 334])
-    opposite_point_3 = np.array([486 , 122])
+    boundry_pairs_1 = np.array([[231 , 147,487 , 122],[252 , 258,530 , 228], [258 , 368,523 , 335]])
+    boundry_pairs_2 = np.array([[231 , 148,239 , 254], [252 , 260,259 , 365],[531 , 229,522 , 337]])
+    boundry_pairs_3 = np.array([[230 , 148,251 , 259], [487 , 122,529 , 227],[237 , 256,257 , 366]])
+    opposite_point_1 = np.array([239 , 254])
+    opposite_point_2 = np.array([487 , 123])
+    opposite_point_3 = np.array([522 , 335])
 
 if box is 'TS1_4':
     boundry_pairs_1 = np.array([[264 , 123,519 , 149],[222 , 229,500 , 259], [230 , 336,493 , 367]])
@@ -260,7 +283,7 @@ def homo2cart_coordinates(point):
 
 
 if box is 'TS1_1':
-    O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet1/20deg.png')
+    O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet1/20deg_w.png')
 if box is 'TS1_2':
     O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet1/40deg_w.png')
 if box is 'TS1_3':
@@ -269,7 +292,10 @@ if box is 'TS1_4':
     O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet1/80deg_w.png')
 if box is 'TS1_5':
     O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet1/100deg_w.png')
-
+if box is 'TS1_6':
+    O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet1/350deg_w.png')
+if box is 'TS2_14':
+    O_img = cv2.imread('D:/Fraunhoffer_FLW_data/Cube_hidden_corner_prediction/Paper DATA/Results Evaluation/TestSet2/14meter_w.png')
 # if box is 'blend1':
 #     O_img = cv2.imread('pictures/Box5/blend1.png')
 # if box is 'blend2':
@@ -341,6 +367,7 @@ draw_line(O_img, np.append(final_hidden_point, opposite_point_1, axis=0).astype(
 draw_line(O_img, np.append(final_hidden_point, opposite_point_2, axis=0).astype(int), color_2,2)
 draw_line(O_img, np.append(final_hidden_point, opposite_point_3, axis=0).astype(int), color_3,3)
 
+# O_img =draw_point_uncertainity(O_img, final_hidden_point, cov_mat, sample_size,color_3)
 
 cv2.imshow('Boundry lines', O_img)
 cv2.waitKey(0)
