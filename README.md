@@ -6,7 +6,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Required-lib">Required Libraries</a></li>
+        <li><a href="#Required-libraries">Required Libraries</a></li>
       </ul>
     </li>
     <li>
@@ -30,11 +30,14 @@ The project is aimed to compute the position of the hidden corner of a cuboid in
 
 The program will give the following outputs:
 
-* Position of the hidden cornor
-* Uncertainity assosiated with the hidden corner
+* Position of the hidden edges and hidden corner
+* Uncertainity assosiated with the computed hidden corner
 
-
-## Required Libraries
+<!-- REQUIRED LIBRARIES -->
+### Required Libraries
 
 * OpenCV
 * Numpy
+
+## Usage 
+The program takes path of an image as an input argument. The visible corners can then manually be selected using mouses-coursor. 
