@@ -10,11 +10,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#annotation">Annotation</a>
     </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -40,9 +36,15 @@ The program will give the following outputs:
 * Numpy
 
 ## Usage 
-The program takes path of an image as an input argument. The visible corners can then manually be selected using the mouses-coursor. `main.py` file envokes the program and path of the image is given after `-i`. _For example_
+The program takes path of an image as an input argument. The visible corners can then manually be selected using the mouses-coursor. `main.py` file envokes the program and path of the image is given after `-i`. A folder is included that contains some test images. 
+_For Example_
 ```sh
 python main.py -i pictures/pics2/box2.png
    ```
+After the image has been loaded, an annotation window appears. The window allows you to annotate the visible corners of the displayed cuboid using `double-click` of the mouse-coursor. "Annotation rules" must be considered when annotating the Seven Visible corners.
+
+## Annotation Rules
 
 
+
+##Annotation
