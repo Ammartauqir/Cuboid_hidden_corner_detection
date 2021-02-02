@@ -15,7 +15,9 @@
     <li>
       <a href="#annotation-rules">Annotation Rules</a>
     </li>
-
+      <li>
+      <a href="#output">Output</a>
+    </li>
   </ol>
 </details>
 
@@ -48,3 +50,6 @@ After the image has been loaded, an annotation window appears. The window allows
 ## Annotation Rules
 In the cuboid the total of 7 visible corners are needed to be annoted. The corners must be selected from `p1 to p7` in the order, that is specified in the image below. i.e. end points of the verticle edges will be annoted first, starting from the extreme left-side edge. And the top seventh corner is annotated at the end.  
 <img src="pictures/readme1.png" >
+
+## Output
+After the annotation of the visible seven corners. Hidden edges and hidden will be drawn on the image, such that it will be clearly visible. Test sets are also included in the pictures that can help verify the results. 
