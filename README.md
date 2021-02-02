@@ -40,4 +40,9 @@ The program will give the following outputs:
 * Numpy
 
 ## Usage 
-The program takes path of an image as an input argument. The visible corners can then manually be selected using mouses-coursor. 
+The program takes path of an image as an input argument. The visible corners can then manually be selected using the mouses-coursor. Path of the image is given after '-i' _For example_
+```sh
+python main.py -i pictures/pics2/box2.png
+   ```
+
+
