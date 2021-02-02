@@ -44,7 +44,4 @@ python main.py -i pictures/pics2/box2.png
 After the image has been loaded, an annotation window appears. The window allows you to annotate the visible corners of the displayed cuboid using `double-click` of the mouse-coursor. "Annotation rules" must be considered when annotating the Seven Visible corners.
 
 ## Annotation Rules
-
-
-
-##Annotation
+<img src="pictures/readme1.png" >
