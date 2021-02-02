@@ -9,11 +9,13 @@
         <li><a href="#Required-libraries">Required Libraries</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#annotation">Annotation</a>
+     <li>
+      <a href="#Usage">Usage</a>
     </li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li>
+      <a href="#annotation-rules">Annotation Rules</a>
+    </li>
+
   </ol>
 </details>
 
